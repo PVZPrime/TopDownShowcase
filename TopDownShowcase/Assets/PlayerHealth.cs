@@ -50,6 +50,20 @@ public class PlayerHealth : MonoBehaviour
             SceneManager.LoadScene(GameEnd);
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "EnemyBullet")
+        {
+
+            health -= 2;
+            healthBar.fillAmount = health / maxHP;
+            if (health <= 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                //SceneManager.LoadScene(levelToLoad);
+            }
+        }
+    }
 
     private float GetHealth()
     {

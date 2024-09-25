@@ -15,8 +15,6 @@ public class EnemyShoot : MonoBehaviour
     float timer = 0;
     [SerializeField]
     float shootDelay = 0.5f;
-    [SerializeField]
-    float bulletDamage = 2;
 
     GameObject player;
     
@@ -35,7 +33,8 @@ public class EnemyShoot : MonoBehaviour
 
         // if player gets within certain distance
         Vector3 ShootDir = player.transform.position - transform.position;
-        if(ShootDir.magnitude < shootDelay && timer > shootDelay )
+
+        if (ShootDir.magnitude < shootDistance && timer > shootDelay)
         {
             // shoot twards the player
             //spawn the bullet
