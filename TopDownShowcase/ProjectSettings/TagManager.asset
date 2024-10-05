@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - PlayerBullet
   - EnemyBullet
+  - crown
+  - walls
   layers:
   - Default
   - TransparentFX
