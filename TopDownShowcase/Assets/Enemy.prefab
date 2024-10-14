@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseSpeed: 2
-  chaseTriggerDistance: 100
+  chaseTriggerDistance: 10
   goHome: 1
 --- !u!114 &997783148242670130
 MonoBehaviour:
