@@ -45,10 +45,19 @@ public class PlayerHealth : MonoBehaviour
                 //SceneManager.LoadScene(levelToLoad);
             }
         }
-        if (collision.gameObject.tag == "coin")
-        {
-            SceneManager.LoadScene(GameEnd);
-        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    { 
+          if (collision.gameObject.tag == "crown")
+          {
+            SceneManager.LoadSceneAsync(3);
+          }
+
+          if (collision.gameObject.tag == "Hole")
+          {
+                SceneManager.LoadSceneAsync(2);
+          }
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -64,6 +73,7 @@ public class PlayerHealth : MonoBehaviour
             }
         }
     }
+
 
     private float GetHealth()
     {

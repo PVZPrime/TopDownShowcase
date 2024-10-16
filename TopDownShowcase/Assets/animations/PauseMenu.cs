@@ -29,6 +29,7 @@ public class PauseMenu : MonoBehaviour
         {
             Resume();
         }
+       
     }
     
     public void Resume() 
@@ -46,7 +47,7 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Resume();
     }
-    public void QutiGame()
+    public void QuitGame()
     {
         Debug.Log("Quit");
         Application.Quit();

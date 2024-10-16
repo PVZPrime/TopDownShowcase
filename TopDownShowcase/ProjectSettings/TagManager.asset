@@ -10,6 +10,7 @@ TagManager:
   - EnemyBullet
   - crown
   - walls
+  - Hole
   layers:
   - Default
   - TransparentFX
